@@ -3,13 +3,13 @@ flowchart TD
     B -->|Yes| C[You find a hidden cave.]
     B -->|No| D[You enter a dark forest.]
     C --> E{Do you explore the cave?}
-    C --> F{Do you leave the cave?}
-    E -->|Yes| G[You discover ancient treasure!]
-    E -->|No| H[You hear strange noises and leave quickly.]
-    F --> I[You meet a wandering traveler.]
-    D --> J{Do you follow the sound of water?}
-    D --> K{Do you keep walking deeper into the forest?}
-    J --> L[You find a beautiful waterfall.]
-    J --> M[You discover a secret pathway.]
-    K --> N[You encounter a friendly elf.]
-    K --> O[You get lost in the woods!]
+    D --> E
+    E -->|Yes| F[You discover ancient treasure!]
+    E -->|No| G[You leave quickly.]
+
+##Entity Descriptions
+* A (Start of The Journey): The beginning of the adventure where you makes the first choice. This is important because it's the start
+* B (Decision Point): The choice of whether to take the mountain path or enter the forest. This is crucial for the cave path.
+* C (Hidden Cave): After taking the path, you end up finding a cave. This is important to reach the other pathline. 
+* D (Dark Forest): If you avoid the mountain path and go through the forest, there is another option. Going to D still leads you to E.
+* E (Explore Cave): This determines whether you enter the cave or not, leaving you with two choices.
