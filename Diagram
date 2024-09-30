@@ -1,0 +1,15 @@
+flowchart TD
+    A[Start Your Journey] --> B{Do you take the path through the mountains?}
+    B -->|Yes| C[You find a hidden cave.]
+    B -->|No| D[You enter a dark forest.]
+    C --> E{Do you explore the cave?}
+    C --> F{Do you leave the cave?}
+    E -->|Yes| G[You discover ancient treasure!]
+    E -->|No| H[You hear strange noises and leave quickly.]
+    F --> I[You meet a wandering traveler.]
+    D --> J{Do you follow the sound of water?}
+    D --> K{Do you keep walking deeper into the forest?}
+    J --> L[You find a beautiful waterfall.]
+    J --> M[You discover a secret pathway.]
+    K --> N[You encounter a friendly elf.]
+    K --> O[You get lost in the woods!]
